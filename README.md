@@ -11,32 +11,34 @@ This boilerplate comes with the following features:
 - Babel
 
 ##What do I need to change?
-1. Choose the name of your destination folder (this is the folder where all the bundles will be compiled into) and then rename the name dist to the name that you want.
+- Choose the name of your destination folder (this is the folder where all the bundles will be compiled into) and then rename the name dist to the name that you want.
 
 ```
 output: {
-  	path: path.resolve(__dirname, '__dist__'),
+  	path: path.resolve(__dirname, '**dist**'),
     filename: '[name].[chunkhash].js'
   }
 ```
 
 ```
 devServer: {
-	contentBase: "./__dist__"
+	contentBase: "./**dist**"
 }
 ```
 
-2. Define the vendors that you will use and add then into your entry point.
+- Define the vendors and the name of your bundle.
 
 ```
 entry: {
-	bundle: __dirname + '/src/index.js',
-	__vendor: ['babel-polyfill']__
+	**bundle: __dirname + '/src/index.js'**,
+	**vendor: ['babel-polyfill']**
 }
 ```
 
-3. And finally rename your css bundle to the name that you want.
+- And finally rename your css bundle to the name that you want.
 
 ```
-const extractSCSS = new ExtractTextPlugin('__styles.css__');
+const extractSCSS = new ExtractTextPlugin('**styles.css**');
 ```
+
+After that you will need to import your packages into your entry javascript file
