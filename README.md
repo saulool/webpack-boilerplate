@@ -20,25 +20,25 @@ output: {
   }
 </pre>
 
-```
+<pre>
 devServer: {
-	contentBase: "./**dist**"
+	contentBase: "./<b>dist</b>"
 }
-```
+</pre>
 
 - Define the vendors and the name of your bundle.
 
-```
+<pre>
 entry: {
-	**bundle: __dirname + '/src/index.js'**,
-	**vendor: ['babel-polyfill']**
+	<b>bundle: __dirname + '/src/index.js'</b>,
+	<b>vendor: ['babel-polyfill']</b>
 }
-```
+</pre>
 
 - And finally rename your css bundle to the name that you want.
 
-```
-const extractSCSS = new ExtractTextPlugin('**styles.css**');
-```
+<pre>
+const extractSCSS = new ExtractTextPlugin('<b>styles.css</b>');
+</pre>
 
 After that you will need to import your packages into your entry javascript file
