@@ -13,12 +13,12 @@ This boilerplate comes with the following features:
 ##What do I need to change?
 - Choose the name of your destination folder (this is the folder where all the bundles will be compiled into) and then rename the name dist to the name that you want.
 
-```
+<pre>
 output: {
-  	path: path.resolve(__dirname, '**dist**'),
+  	path: path.resolve(__dirname, '<b>dist</b>'),
     filename: '[name].[chunkhash].js'
   }
-```
+</pre>
 
 ```
 devServer: {
