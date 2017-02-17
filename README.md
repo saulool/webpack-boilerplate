@@ -1,4 +1,4 @@
-# webpack-boilerplate
+#Webpack Boilerplate
 Webpack boilerplate to kickstart your project
 
 ##What's included?
