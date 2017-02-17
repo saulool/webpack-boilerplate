@@ -6,7 +6,7 @@ This boilerplate comes with the following features:
 - Dependency injection into your HTML file
 - SASS compiler & SASS linter
 - Twitter Bootstrap 3
-- Caching features (adding hash do filename and then only change the hash if the file's content have changed)
+- Caching features (adding hash to filename and then only change the hash if the file's content have changed)
 - jQuery
 - Babel
 
